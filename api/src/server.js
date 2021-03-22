@@ -21,7 +21,7 @@ const stan = {
 }
 
 app.use(express.json())
-
+app.use(express.static('static'))
 app.get('/api/v1/version', (req, res) => {
   res.json('1.0.0')
 })
